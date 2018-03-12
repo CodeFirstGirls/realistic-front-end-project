@@ -8,6 +8,7 @@ _(todo)_
 - [ ] add instructions / backbone for students to create a nav bar
 - [ ] add instructions for about me page
 - [ ] add instructions on how to host the project on github pages
+- [ ] add instructions on how to fork this repo for students
 
 A Pen created at CodePen.io. You can find this one at https://codepen.io/dianaklee/pen/YeGVzq.
 
