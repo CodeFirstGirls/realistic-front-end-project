@@ -1,0 +1,9 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+#microblog {
+  padding: 5vh 2vw;
+  background-color: darkred;
+  color: white;
+}
