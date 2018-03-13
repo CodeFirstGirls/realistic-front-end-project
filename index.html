@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Realistic Front-End Task Example 2 - Microblog</title>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Realistic Front-End Task Example 2 - Microblog</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Below is the Bootstrap code to create a navigation bar, but you'll
+       need to tailor it to your site. -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
 
-    <!-- Uses bootstrap tables: https://getbootstrap.com/docs/3.3/css/#tables -->
-    <div id="microblog">
+    <!-- What do you think this button does? Try reducing the width of
+         your browser and see what happens, then delete the button code
+         and see what's changed when you try again. -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!-- You need to create a second link to go to your 'About'
+             page - what do you need to put in the href attribute to
+             link it correctly? The idea is the same as we used to link
+             to css and javascript files in earlier sessions. -->
+        <a class="nav-item nav-link" href="#">Home</a>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Boostrap navbar code -->
+
+  <!-- Uses bootstrap tables: https://getbootstrap.com/docs/3.3/css/#tables -->
+  <div id="microblog">
     <h1>My Timeline</h1>
 
     <div class='container'>
@@ -26,10 +51,10 @@
       </div>
       <!--   Use JS to add more divs here   -->
     </div>
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js'></script>
-    <script  src="js/main.js"></script>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.js'></script>
+  <script  src="js/main.js"></script>
 
-  </body>
+</body>
 </html>
