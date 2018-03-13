@@ -14,13 +14,15 @@ Forking creates a copy of this repository to your GitHub account so you changed 
 - The navigation bar has a placeholder title of 'Navbar', change this to the name of your site - you can call it whatever you want.
 - There's some code that mentions the word 'toggle' quite a lot, let's see what this does. Try reducing the width of your browser like you were on a mobile device, and see what changes. Then, remove this button and try again - what's different?
 - Your website is going to have two pages, the home page `index.html` and an 'About Me' page `about.html`, but how will your users get from one page to the other? Add a link to the navbar that links to your `about.html` page.
-- Load your page in your web browser and click on the new link to your about page. Now click on the home link. Wait a second... where's the home link? We've created the navbar in `index.html` but not in `about.html`, so copy this code over to `about.html`
-- Now try? Does it work? No? Look at the href attribute of the 'Home' link, it seems to be pointing to '#'. Now '#' in this use refers to the top of the current page, which isn't much use when you're on the 'About' page and want to go 'Home'. Update this link so it sends us back to `index.html`, and make sure you copy the navbar between `about.html` and `index.html` so it's the same in both.
+   - Load your page in your web browser and click on the new link to your about page. Now click on the home link. Wait a second... where's the navbar gone? We've created the navbar in `index.html` but not in `about.html`, so copy this code over to `about.html`
+    - Now try? Does it work? No? Look at the href attribute of the 'Home' link, it seems to be pointing to '#'. Now '#' in this case refers to the top of the current page, which isn't much use when you're on the 'About' page and want to go 'Home'. Update this link so it sends us back to `index.html`, and make sure you copy the navbar between `about.html` and `index.html` so it's the same in both.
+- Now we're getting somewhere... but that grey looks a bit boring. Why don't we update it to a cooler looking black? This can be controlled by classes that Bootstrap provides, if you look at the `<nav>` classes currently we have `navbar-light` and `bg-light` specified.
+    - Let's [look at the docs](https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes) to see what we need to change this to in order to make it a darker colour. Once you're done, remember to copy the code so it's the same in both .html files! (Note: in any site more complex than two or three pages you would use templating that would mean you don't have to keep copying things like the navbar every time you update it)
 
 _(todo)_
 
 ## Further work / TODO for this repo
-- [x] add instructions / backbone for students to create a nav bar
+- [ ] add instructions / backbone for students to create a nav bar
 - [ ] add instructions for about me page
 - [ ] add instructions on how to host the project on github pages
 - [ ] add instructions on making the website responsive
