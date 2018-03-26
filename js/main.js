@@ -13,7 +13,7 @@ $.get('https://jsonplaceholder.typicode.com/posts', params)
     console.log(data[0]);
 
     var buffer = [];
-    var divOpening = "<div class='post row' id='post-0'>< h2 class='title' >";
+    var divOpening = "<div class='post row' id='post-1'><h2 class='title'>";
 
     // Here, we're using the first post as an example of how you can append this information
     var firstPost = data[0];
