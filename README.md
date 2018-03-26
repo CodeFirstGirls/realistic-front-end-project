@@ -11,6 +11,7 @@ Forking creates a copy of this repository to your GitHub account so you can make
 - Click 'Fork' at the top right of this page, and select your user area
 - Open up GitHub desktop and clone the repository to your computer
 - Open up the folder in Atom
+- Open `index.html` in Chrome so you can see what you are working with
 
 ### Create a navigation bar
 
@@ -24,11 +25,19 @@ Forking creates a copy of this repository to your GitHub account so you can make
 - Now we're getting somewhere... but that grey looks a bit boring. Why don't we update it to a cooler looking black? This can be controlled by classes that Bootstrap provides, if you look at the `<nav>` classes currently we have `navbar-light` and `bg-light` specified.
 - Let's [look at the docs](https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes) to see what we need to change this to in order to make it a darker colour. Once you're done, remember to copy the code so it's the same in both .html files! (Note: in any site more complex than two or three pages you would use templating that would mean you don't have to keep copying things like the navbar every time you update it)
 
+### Host your project on GitHub Pages
+
+Once you are confident your project is ready to be made available online, push all your changes to your repository on GitHub, then go to the online repository page (on GitHub).
+
+Click on `Settings`, then scroll down to `GitHub Pages`. Choose a branch to set as the source for your website. This is the version of your website that will be live. You can use any branch you like, and most development teams would name a branch called `release`, `prod`, `production`, or the like and use that as the production-ready version of the project.
+
+You can read more about [GitHub's Pages service here](https://pages.github.com/).
+
 ## Further work / TODO for this repo
 
 - [x] add instructions / backbone for students to create a nav bar
 - [ ] add instructions for about me page
-- [ ] add instructions on how to host the project on github pages
+- [x] add instructions on how to host the project on github pages
 - [ ] add instructions on making the website responsive
 - [ ] add information about APIs
 - [ ] add instructions for nice-to-haves / bonuses :
