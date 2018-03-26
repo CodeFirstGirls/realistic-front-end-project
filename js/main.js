@@ -18,7 +18,7 @@ $.get('https://jsonplaceholder.typicode.com/posts', params)
     // Here, we're using the first post as an example of how you can append this information
     var firstPost = data[0];
     buffer.push(divOpening + firstPost.title +
-      "<small> By User " + firstPost.user + "</small></h2>"
+      "<small> By User " + firstPost.userId + "</small></h2>"
       + "<p>" + firstPost.body + "</p></div>");
 
     // var posts = data;
