@@ -1,20 +1,34 @@
 // What is this bit of code doing?
-$.get('https://jsonplaceholder.typicode.com/posts?userId=1', function(data){
+var params = {
+  userId: 1
+}
+
+$.get('https://jsonplaceholder.typicode.com/posts', params, function(data){
   console.info("Total number of data objects received: ");
   console.log(data.length);
   console.info("Here is all the data: ");
   console.log(data);
   console.info("Here is the first object: ");
-  console.log(data);
+  console.log(data[0]);
 
-  // var users = data.data;
-  // console.log("total users:", users.length);
-  // users.forEach(function(user){
-  //   console.log(user);
-    // TODO: append users to tables. 
+  var buffer = [];
+  var divOpening = "<div class='post row' id='post-0'>< h2 class='title' >";
+
+  // Here, we're using the first post as an example of how you can append this information
+  var firstPost = data[0];
+  buffer.push(divOpening + firstPost.title +
+    "<small> By User "+ firstPost.user + "</small></h2>"
+    + "<p>" + firstPost.body + "</p></div>");
+
+  // var posts = data;
+  // console.log("total posts:", posts.length);
+  // posts.forEach(function(post){
+  //   console.log(post);
+    // TODO: append posts to tables. 
     // Useful documentation for you http://api.jquery.com/category/manipulation/
-  // })
-  
+  // });
+
+  $('#microblog .container').append(buffer);
 });
 
 
